@@ -1,0 +1,4 @@
+include ':login'
+include ':network'
+include ':app'
+rootProject.name = "LrhMusic"

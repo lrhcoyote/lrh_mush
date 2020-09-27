@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.mainfragments.NewMusicFragment">
+    <LinearLayout
+        android:id="@+id/lyNewMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--        轮播-->
+        <include layout="@layout/item_new_music_banner" />
+        <!--        导航-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlvNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp" />
+        <!--        推荐歌单-->
+        <include
+            android:id="@+id/pushMusic"
+            layout="@layout/item_new_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+        <!--        推荐歌单列表-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlsPushMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--        独家推送-->
+        <include
+            android:id="@+id/exclusivePushMusic"
+            layout="@layout/item_new_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+        <!--        独家推送列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include
+                android:id="@+id/exclusivePushItem1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                layout="@layout/item_personalized"/>
+            <include
+                android:id="@+id/exclusivePushItem2"
+                android:layout_marginLeft="2dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/item_personalized"/>
+        </LinearLayout>
+        <include
+            android:id="@+id/exclusivePushItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_personalized"/>
+<!--        推荐MV-->
+        <include
+            android:id="@+id/pushPersonalizedMv"
+            layout="@layout/item_new_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+        <!--        推荐MV列表-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlsPushPersonalizedMv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rlsExclusivePushMusic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+        <!--      最新音乐  -->
+<!--        <include-->
+<!--            android:id="@+id/newPushMusic"-->
+<!--            layout="@layout/item_new_music_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="14dp" />-->
+<!--        &lt;!&ndash;        最新音乐列表&ndash;&gt;-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rlsNewPushMusic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        &lt;!&ndash;      主播电台  &ndash;&gt;-->
+<!--        <include-->
+<!--            android:id="@+id/anchorStation"-->
+<!--            layout="@layout/item_new_music_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="14dp" />-->
+<!--        &lt;!&ndash;        主播电台列表&ndash;&gt;-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rlsAnchorStation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--下一页的toolbar-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/theme_color_primary">
+    <ImageButton
+        android:id="@+id/ivActionBarBack"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/actionbar_back"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivActionBarBack"
+        android:textColor="@color/background_color"
+        android:textSize="22sp"
+        android:layout_marginLeft="@dimen/dp_10" />
+</RelativeLayout>
